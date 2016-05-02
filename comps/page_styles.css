@@ -1,0 +1,67 @@
+@charset "utf-8";
+html {
+	width:100%;
+	height:100%;
+}
+body {
+	width:100%;
+	height:100%;
+	margin:0px;
+	background-color:#1A00FF;
+}
+#header {
+	position:relative;
+	display:inline-block;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:50px;
+	background-color:#83FFED;
+	z-index:1;
+}
+#menustrip {
+	position: relative;
+	bottom:20px;
+	padding-left:20px;
+	display:inline-block;
+}
+.menuitem {
+	display:inline-block;
+	border-radius:4px;
+	height:25px;
+	min-width:50px;
+	text-align:center;
+}
+.menuitem:hover{
+	background-color:#00FFCB;
+	cursor:pointer;
+}
+#mainpage {
+	padding-top:50px;
+	min-height: calc(100% - 50px);
+	background-color:#FFFFFF;
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	word-wrap:break-word;
+}
+#CTAmembership {
+	position:absolute;
+	bottom:50px;
+	right:50px;
+}
+#mainimage {
+	position:relative;
+	z-index:0;
+}
+
+
+
+.menutext {
+	vertical-align:middle;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	display:inline-block;
+}
