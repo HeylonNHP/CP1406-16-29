@@ -10,6 +10,7 @@ body {
 	background-color:#1d207c;
 	background-image:url(images/noise.png);
 	background-attachment:fixed;
+	font-family: 'Raleway', sans-serif;
 }
 #header {
 	position:relative;
@@ -49,9 +50,11 @@ body {
 	word-wrap:break-word;
 }
 #CTAmembership {
+	color:#FFFFFF;
 	position:absolute;
 	bottom:10%;
 	right:8%;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 #mainimage {
 	position:relative;
