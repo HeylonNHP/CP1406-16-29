@@ -8,18 +8,47 @@
 </head>
 
 <body>
-<div id="header" class="globalboxshadow"><div style="display:inline"><img src="images/logo.png" height="50" style="padding-left:15px; display:inline-block; cursor:pointer;" onClick="window.location='index.html'"/></div>
-<div id="menustrip"><span class="menuitem"><span class="menutext">Home</span></span> | <span class="menuitem"><span class="menutext">News</span></span> | <span class="menuitem"><span class="menutext">Events</span></span> | <span class="menuitem"><span class="menutext">Gallery</span></span> | <span class="menuitem"><span class="menutext">People</span></span> | <span class="menuitem"><span class="menutext">Contacts</span></span> | <span class="menuitem"><span class="menutext">Become a Supporter</span></span> | <span class="menuitem"><span class="menutext">About Us</span></span></div>
+<!--Facebook integration Javascript SDK-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!--Header & navigation menu-->
+<div id="header" class="globalboxshadow">
+<!--<div style="display:inline">-->
+<img src="images/logo.png" height="50" style="padding-left:15px; display:inline-block; vertical-align:top; cursor:pointer;" onClick="window.location='index.html'"/>
+<!--</div>-->
+
+<div id="menustrip"><span class="menuitem"><span class="menutext">Home</span></span> | 
+<span class="menuitem"><span class="menutext">News</span></span> | 
+<span class="menuitem"><span class="menutext">Events</span></span> | 
+<span class="menuitem"><span class="menutext">Gallery</span></span> | 
+<span class="menuitem"><span class="menutext">People</span></span> | 
+<span class="menuitem"><span class="menutext">Contacts</span></span> | 
+<span class="menuitem"><span class="menutext">Become a Supporter</span></span> | 
+<span class="menuitem"><span class="menutext">About Us</span></span></div>
 </div>
 
+<!--Page div-->
 <div id="mainpage" class="globalboxshadow">
+<!--Main image and CTA-->
 <div id="mainimage"><img src="images/frontpagebigimage.png" style="width:100%;"/>
-<div id="CTAmembership"><h3>Interested in becoming a member,<br> or playing in the orchestra? Click here!</h3></div>
+<div id="CTAmembership"><h3>Interested in becoming a member,<br> or playing in the orchestra? <a href="">Click here!</a></h3></div>
 </div>
-<blockquote>
+<section id="pageContent">
 <h1>The Barrier Reef Orchestra - A North Queensland Icon</h1>
+<!--Facebook integration-->
+<div id="facebookIntegration">
+<h3>Our facebook page</h3>
+<div class="fb-page" data-href="https://www.facebook.com/nqorchestra/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/nqorchestra/"><a href="https://www.facebook.com/nqorchestra/">Barrier Reef Orchestra</a></blockquote></div></div>
+</div>
 <p>
-The Barrier Reef Orchestra was formed in Townsville in 2000 after a workshop conducted by Richard McIntyre from Canberra. Over the past 15 years it has gone from strength to strength and now presents three main concerts a year, as well as smaller concerts such as the children’s concert Peter and the Wolf in 2014. We are a community orchestra, drawing players from a large cross section of the Townsville community and sometimes beyond. All are drawn together by their great love of orchestral music and desire to provide North Queensland with quality performances. Depending on the program up to 50 musicians play a wide ranging repertoire which has included some of the great orchestral compositions such as the New World Symphony by Dvorak and most of the Beethoven symphonies as well as Tchaikovsky and Bizet.<p>
+The Barrier Reef Orchestra was formed in Townsville in 2000 after a workshop conducted by Richard McIntyre from Canberra. Over the past 15 years it has gone from strength to strength and now presents three main concerts a year, as well as smaller concerts such as the children’s concert Peter and the Wolf in 2014. We are a community orchestra, drawing players from a large cross section of the Townsville community and sometimes beyond. All are drawn together by their great love of orchestral music and desire to provide North Queensland with quality performances. Depending on the program up to 50 musicians play a wide ranging repertoire which has included some of the great orchestral compositions such as the New World Symphony by Dvorak and most of the Beethoven symphonies as well as Tchaikovsky and Bizet.</p>
 <p>
 An outstanding performance of Beethoven’s 9th Symphony presented to a sell-out audience was recently followed by Peter Sculthorpe’s Mangroves, a collaboration with audio-visual artists, ABC radio and Umbrella Studios. The programs are testament to the orchestra’s willingness to embrace mainstream classical repertoire as well as opportunities for collaboration. </p>
 <p>
@@ -30,8 +59,7 @@ In 2015 the orchestra was invited to perform in three festivals, joining with th
 Now to 2016 which is going to be a stellar year for your Orchestra. Already we have our three major concerts which will include opera, featuring Paul Tabone born in Ingham, but now working the international stage as a tenor based in Italy. Rachmaninov’s Piano Concerto No.2 featuring last year’s winner of the instrumental section of the ACVC, Arthur Athan. Our opening performance titled Dreams and Dances is sure to have some favourites such as Afternoon of a Fawn by Debussy.</p> 
 <p>
 We are also pleased to be part of the Townsville 150 Concert where we will share the stage with the likes of David Campbell, Luke Kennedy, Bronwyn Douglas and the 1 RAR Band just to name a few of the guests. We will be back to Queens Gardens for a repeat performance as part of AFCM due to the huge popularity of last year’s concert.</p>
-
-</blockquote>
+</section>
 <br>
 <br>
 </div>

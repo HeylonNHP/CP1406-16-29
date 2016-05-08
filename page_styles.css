@@ -1,7 +1,13 @@
 @charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Vollkorn);
+
 html {
 	width:100%;
 	height:100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Vollkorn', serif;
 }
 body {
 	width:100%;
@@ -13,19 +19,21 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 #header {
-	position:relative;
 	display:inline-block;
 	position:fixed;
 	top:0px;
 	left:0px;
 	width:100%;
-	height:50px;
+	min-height:50px;
+	color:#3E48FF;
 	background-color:#83FFED;
+	border-bottom:1px;
+	border-color:#3E48FF;
+	border-bottom-style:solid;
 	z-index:1;
 }
 #menustrip {
-	position: relative;
-	bottom:20px;
+	position:relative;
 	padding-left:20px;
 	display:inline-block;
 }
@@ -35,6 +43,8 @@ body {
 	height:25px;
 	min-width:50px;
 	text-align:center;
+	vertical-align:bottom;
+	overflow:hidden;
 }
 .menuitem:hover{
 	background-color:#00FFCB;
@@ -49,6 +59,17 @@ body {
 	margin-right:auto;
 	word-wrap:break-word;
 }
+#pageContent {
+	margin-top:2%;
+	margin-left:3%;
+	margin-right:3%;
+	margin-bottom:2%;
+}
+#facebookIntegration {
+	float:right;
+}
+
+
 #CTAmembership {
 	color:#FFFFFF;
 	position:absolute;
@@ -62,7 +83,6 @@ body {
 }
 
 .menutext {
-	vertical-align:middle;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
