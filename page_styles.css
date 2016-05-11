@@ -32,16 +32,24 @@ body {
 	border-bottom-style:solid;
 	z-index:1;
 }
+#logoimage {
+	padding-left:15px;
+	display:inline-block;
+	vertical-align:top;
+	cursor:pointer;
+}
+
 #menustrip {
 	position:relative;
 	padding-left:20px;
 	display:inline-block;
+	visibility:visible;
 }
 .menuitem {
 	display:inline-block;
 	border-radius:4px;
 	height:25px;
-	min-width:50px;
+	min-width:25px;
 	text-align:center;
 	vertical-align:bottom;
 	overflow:hidden;
@@ -92,4 +100,45 @@ body {
 	-webkit-box-shadow: 0px 0px 5px 1px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    0px 0px 5px 1px rgba(50, 50, 50, 0.75);
 	box-shadow:         0px 0px 5px 1px rgba(50, 50, 50, 0.75);
+}
+#menubutton{
+	position:absolute;
+	top:25px;
+	transform:translateY(-50%);
+	left:5px;
+	display:none;
+}
+
+/*Case: Screen width smaller than navigation menu width
+Effect: Modify navigation menu to display appropriately on mobile*/
+@media only screen and (max-width: 650px)
+{
+	#menustrip{
+		position:relative;
+		left:50%;
+		transform:translateX(-50%);
+		padding-right:20px;
+		display:none;
+	}
+	.menuitem {
+		display:inline-block;
+		border-radius:0px;
+		width:100%;
+		background-color:#83FFAC;
+	}
+	#logoimage{
+		position:relative;
+		left:50%;
+		top:0%;
+		transform:translateX(-50%);
+		display:block;
+	}
+	#CTAmembership {
+		bottom:50%;
+		right:50%;
+		transform:translate(50%,50%);
+	}
+	#menubutton{
+		display:inline-block;
+	}
 }

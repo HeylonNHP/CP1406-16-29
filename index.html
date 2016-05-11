@@ -1,13 +1,14 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home</title>
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <link href="page_styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="page_script.js"></script>
 </head>
 
-<body>
+<body onResize="pageResize()" onLoad="pageResize()">
 <!--Facebook integration Javascript SDK-->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -20,18 +21,21 @@
 
 <!--Header & navigation menu-->
 <div id="header" class="globalboxshadow">
-<!--<div style="display:inline">-->
-<img src="images/logo.png" height="50" style="padding-left:15px; display:inline-block; vertical-align:top; cursor:pointer;" onClick="window.location='index.html'"/>
-<!--</div>-->
 
-<div id="menustrip"><span class="menuitem"><span class="menutext"><a href="index.html">Home</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="news.html">News</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="events.html">Events</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="gallery.html">Gallery</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="people.html">People</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="contacts.html">Contacts</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="supporter.html">Become a Supporter</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="about%20us.html">About Us</a></span></span></div>
+<button id="menubutton" onClick="toggleMenu()">menu</button>
+<img src="images/logo.png" id="logoimage" height="50" onClick="window.location='index.html'"/>
+
+
+<div id="menustrip">
+<span class="menuitem" onClick="window.location='index.html'"><span class="menutext">Home</span></span>
+<span class="menuitem" onClick="window.location='news.html'"><span class="menutext">News</span></span>
+<span class="menuitem" onClick="window.location='events.html'"><span class="menutext">Events</span></span>
+<span class="menuitem" onClick="window.location='gallery.html'"><span class="menutext">Gallery</span></span>
+<span class="menuitem" onClick="window.location='people.html'"><span class="menutext">People</span></span>
+<span class="menuitem" onClick="window.location='contacts.html'"><span class="menutext">Contacts</span></span>
+<span class="menuitem" onClick="window.location='supporter.html'"><span class="menutext">Supporter</span></span>
+<span class="menuitem" onClick="window.location='about us.html'"><span class="menutext">About us</span></span>
+</div>
 </div>
 
 <!--Page div-->
@@ -61,6 +65,9 @@ Now to 2016 which is going to be a stellar year for your Orchestra. Already we h
 <p>
 We are also pleased to be part of the Townsville 150 Concert where we will share the stage with the likes of David Campbell, Luke Kennedy, Bronwyn Douglas and the 1 RAR Band just to name a few of the guests. We will be back to Queens Gardens for a repeat performance as part of AFCM due to the huge popularity of last year’s concert.</p>
 </section>
+
+
+
 <br>
 <br>
 </div>
