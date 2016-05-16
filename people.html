@@ -5,24 +5,28 @@
 <title>Home</title>
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <link href="page_styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="page_script.js"></script>
 </head>
 
 <body>
 
 <!--Header & navigation menu-->
 <div id="header" class="globalboxshadow">
-<!--<div style="display:inline">-->
-<img src="images/logo.png" height="50" style="padding-left:15px; display:inline-block; vertical-align:top; cursor:pointer;" onClick="window.location='index.html'"/>
-<!--</div>-->
 
-<div id="menustrip"><span class="menuitem"><span class="menutext"><a href="index.html">Home</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="news.html">News</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="events.html">Events</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="gallery.html">Gallery</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="people.html">People</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="contacts.html">Contacts</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="supporter.html">Become a Supporter</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="about%20us.html">About Us</a></span></span></div>
+<button id="menubutton" onClick="toggleMenu()">menu</button>
+<img src="images/logo.png" id="logoimage" height="50" onClick="window.location='index.html'"/>
+
+<!--Menu strip links-->
+<div id="menustrip">
+<span class="menuitem" onClick="window.location='index.html'"><span class="menutext">Home</span></span>
+<span class="menuitem" onClick="window.location='news.html'"><span class="menutext">News</span></span>
+<span class="menuitem" onClick="window.location='events.html'"><span class="menutext">Events</span></span>
+<span class="menuitem" onClick="window.location='gallery.html'"><span class="menutext">Gallery</span></span>
+<span class="menuitem" onClick="window.location='people.html'"><span class="menutext">People</span></span>
+<span class="menuitem" onClick="window.location='contacts.html'"><span class="menutext">Contacts</span></span>
+<span class="menuitem" onClick="window.location='supporter.html'"><span class="menutext">Become a Supporter</span></span>
+<span class="menuitem" onClick="window.location='about us.html'"><span class="menutext">About us</span></span>
+</div>
 </div>
 
 <!--Page div-->
@@ -32,10 +36,98 @@
 
 </div>
 <section id="pageContent">
-<h1>The Barrier Reef Orchestra - People</h1>
+
+<h1>Mark Shiell <br> (Conductor)</h1>
+<img src="images/Mark Shiell02.jpg" style="float:left; padding-right:15px"/>
+<p>Mark has guest-conducted ensembles including the Melbourne Symphony Orchestra, West Australian Symphony, Moscow Symphony Orchestra, State Academic Symphony Orchestra of St. Petersburg, Victorian Opera, Orchestra Ensemble Kanazawa, Canberra Symphony Orchestra, Sydney Sinfonia, Melbourne Youth Orchestra, University of Melbourne Symphony Orchestra and the Orchestras of the State Music Camps in Melbourne and Adelaide.</p>
+<p>Currently he serves as Artistic Director and Principal Conductor of Zelman Symphony Orchestra, the Ballarat Symphony and the Macquarie Philharmonia.</p>
+<p>His love of community and youth music has kept him busy contributing to the growth and development of important initiatives in both of these areas here in Australia. Most recently, Mark developed a Regional Orchestra Weekend for ensembles from across Victoria to meet and perform together, with the aim to make this an annual event.</p>
+<p>Mark is also passionate about the education and training of future conductors, and has been frequently involved as a guest teacher of the Masters of Conducting students at the Melbourne Conservatorium in 2015.</p>
+<br>
+<br>
+
+<h1>Adam Lopez <br> (Vocal)</h1>
+<img src="images/Adam-Lopez2.jpg" style="float:left; padding-right:15px"/>
+<p>Adam Lopez’s exceptional vocal artistry has paved opportunities to perform backing vocals for some of the biggest names in the music industry such as Mariah Carey, Keith Urban and The Coors. His most recent noted collaboration was headlining with Australian Jazz legend James Morrison in a string of Symphonic Concerts in Perth, Hobart and Brisbane. </p>
+<p>His discography includes an eclectic collection of genres spanning from Pop-Opera, Pop, Rhythm & Blues, Jazz, Power Ballads and Fiery Latin! His phenomenal vocal range smashed two Guinness World Records.</p>
+<p>This achievement has astounded audiences from all around the world leading him to perform and appear on international television and radio stations in Japan, Spain, Italy, Korea, Hong Kong and the USA. Adam Lopez has undoubtedly got one of the most fascinating vocal instruments on the planet. He delighted audiences when he sang in Townsville with the Barrier Orchestra in 2012 along with Sean O’Boyle and James Morrison. </p>
+<br>
+<br>
+
+<h1>Domenico Taraborrelli <br> (Accordion)</h1>
+<img src="images/Domenico-Taraborrelli.jpg" style="float:left; padding-right:15px"/>
+<p>Domenico is one of Brisbane’s most experienced and versatile multicultural entertainers. He has performed in almost every possible style since he commenced his musical career in 1971 at age 4. He studied music on the traditional European instrument called the Piano Accordion and this is still his chosen instrument, although he also now uses the latest electronic midi accordion which incorporates other built in instruments. </p>
+<p>Domenico moved from three piece cabaret bands to a more sophisticated five piece band, the Latin Mafia which performs swing and Latin classics from the Rat Pack era. </p>
+<p>He has performed in many venues from QPAC with the Queensland Pops Orchestra to being runners up with his Celtic Band, Murphy’s Pigs at the Tamworth Golden Fiddle Awards. </p>
+<br>
+<br>
+<br>
+
+<h1>Jennifer Bradstreet <br> (Flute)</h1>
+<img src="images/JenniferBradstreet200.jpg" style="float:left; padding-right:15px"/>
+<p>Jennifer Bradstreet completed a Bachelor of Music with Honours at the Sydney Conservatorium, before taking up a summer scholarship at St Andrews and Oxford in the UK, and then moving to London in 2010. She became a student at the Royal College of Music under British flautist Susan Milan, and graduated with a Postgraduate Diploma of Performance in 2011.</p>
+<p>While in London, she played in side-by-side projects with the London Symphony and was invited onto the prestigious BBC Symphony Orchestral pathway. Many summer scholarships and international master-classes followed, in Germany, England and Italy.</p>
+<p>In 2013, Jennifer accepted a Masters scholarship under James Kortum and Aldo Baerten (Belgium) at the Sydney Conservatorium, where she will complete her studies this year. She was a finalist in the 2013 Australian Flute Festival Orchestral Flute Competition and first-prize winner in the 2014 Australian Concerto & Vocal Competition (all instruments). She is active as a soloist and chamber musician, and also performs regularly with the Australian Opera and Ballet Orchestra in Sydney, with whom she has freelanced since 2013.</p>
+<br>
+<br>
+
+<h1>Raymond Yong <br> (Conductor)</h1>
+<img src="images/RaymondYong200.jpg" style="float:left; padding-right:15px"/>
+<p>Raymond Yong was born in Malaysia, emigrating to Australia at the age of two. He received his initial musical training in Perth, performing regularly in public piano recitals from an early age. It was in High School that he forst took to the podium as a conductor, directing his school orchestra and choir.</p>
+<p>Raymond went on to study conducting at the University of Melbourne as a pupil of the late John Hopkins and received further training in the Symphony Australia Young Development Programme. He became the Music Director of the Victorian Youth Symphony Orchestra and Victoria Chorale and was the Founding Director of Orchestra 21.</p>
+<p>He has appeared as Guest Conductor for the Melbourne Chamber Orchestra, the Port Fairy Music Festival, Stonnington Symphony, Preston Symphony, and Kooyong Chamber Players. He has been a regular guest with the barrier Reef Orchestra since 2011,conducting the orchestra, performing as a piano soloist, and providing conducting workshops to teachers and conductors in the Townsville area.</p>
+<p>Raymond is also a sought-after piano soloist and accompanist. Concert highlights include Chamber Music performances at the Musica Viva, Huntington Festival, the Linari Classic in Italy, as well as piano concerto engagements with the Melbourne Symphony, the Sydney Symphony, West Australian and Tasmanian Symphony Orchestras.</p>
+<br>
+<br>
+
+<h1>Leah Li <br> (Harp)</h1>
+<img src="images/LeahLi250.jpg" style="float:left; padding-right:15px"/>
+<p>Townsville based harpist Leah Xiang Li enjoys a diverse career as an orchestral and chamber musician, soloist, instrumental teacher and primary school language teacher. </p>
+<p>Leah graduated from the Queensland Conservatorium Griffith University under the tutelage of Sebastien Lipman. She was the recipient of Ross Peters 4MBS Chamber Music Prize and performed for the Honourable Dame Quentin Bryce (former Governor-General of Australia). She was also the principal harpist for Australian International Symphony Orchestra Institution, Queensland Youth Symphony Orchestra, Queensland Conservatorium Symphony Orchestra and Queensland Conservatorium Opera Orchestra. </p>
+<p>Leah‘s repertoire spans from the Baroque to the present day. She has a special interest in Jazz and is seeking to fulfil this passion through further study. Leah is also dedicated to education, community outreach and musical advocacy as demonstrated by her current involvement in Barrier Reef Orchestra. </p>
+<br>
+<br>
+
+<h1>Yoshika Masuda <br> (Cello)</h1>
+<img src="images/YoshikaMasuda250.jpg" style="float:left; padding-right:15px"/>
+<p>Born in Kobe, Japan, Yoshika Masuda first started to play the cello at the age of five. Following studies with George Pedersen in Australia, he went onto study at the Royal Northern College of Music in Manchester on a full scholarship.</p>
+<p>Yoshika was recently awarded first prize at both the Australian Concerto & Vocal Competition and the YMF National Debut Concerto Competition, and is also the winner of the Yamaha Music Foundation of Europe String Award. He has also won top prizes at the Sydney Cello Award, Australian National Youth Concerto Competition and the J A Beare International Solo Bach Competition. Yoshika has performed concertos and recitals throughout Australia, Austria, France, Italy, Japan, the UK and USA.</p>
+<p>Yoshika gained his Bachelor of Music with first class honours from the RNCM, receiving both the Sir John Munduell Principals’s Prize and the Leonard Rose Cello Award for outstanding achievement. He also completed his Master of Music at the RNCM with distinction the following year. </p>
+<p>Yoshika is currently continuing his studies in Los Angeles as a Doctorate student. Yoshika’s cello is a fine Carl Becker model (1930), loaned to him from a private foundation. </p>
+<br>
+<br>
+
 </section>
-<br>
-<br>
+
+<!--Page footer-->
+<footer>
+<!--Footer CTA-->
+<span id="footerCTA"><h2 style="padding:0px; margin:0px;">Wish to become a member, benefactor or donate?</h2><br><b>Contact us</b> or <b>Become a supporter!</b></span>
+<!--Page links-->
+<div id="footerlinks">
+<span class="column">
+<h4 style="margin:0px;">Pages</h4>
+<span class="footerlinkitem" onClick="window.location='index.html'">Home</span>
+<span class="footerlinkitem" onClick="window.location='news.html'">News</span>
+<span class="footerlinkitem" onClick="window.location='events.html'">Events</span>
+</span>
+<span class="column">
+<h4 style="margin:0px;">Pages</h4>
+<span class="footerlinkitem" onClick="window.location='gallery.html'">Gallery</span>
+<span class="footerlinkitem" onClick="window.location='people.html'">People</span>
+<span class="footerlinkitem" onClick="window.location='about us.html'">About us</span>
+</span>
+<span class="column">
+<h4 style="margin:0px;">Connect with us</h4>
+<span class="footerlinkitem" onClick="window.location='https://www.facebook.com/nqorchestra/'">Facebook</span>
+<span class="footerlinkitem" onClick="window.location='contacts.html'">Contact us</span>
+<span class="footerlinkitem" onClick="window.location='supporter.html'">Become a supporter</span>
+</span>
+</div>
+
+<span id="copyrighttext">Â© Copyright 2016 Heylon White &amp; Travis Macauley</span>
+</footer>
+
 </div>
 </body>
 </html>
