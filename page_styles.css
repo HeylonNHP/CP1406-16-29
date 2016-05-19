@@ -71,7 +71,7 @@ body {
 footer {
 	width:100%;
 	position:relative;
-	bottom:0px;
+	bottom: 0px;
 	height:250px;
 	padding-top:1%;
 	text-align:center;
@@ -149,6 +149,7 @@ footer {
 	-moz-box-shadow:    0px 0px 5px 1px rgba(50, 50, 50, 0.75);
 	box-shadow:         0px 0px 5px 1px rgba(50, 50, 50, 0.75);
 }
+
 #menubutton{
 	position:absolute;
 	top:25px;

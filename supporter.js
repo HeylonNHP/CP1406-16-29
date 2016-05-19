@@ -24,5 +24,8 @@ function check_form(){
 	if(correct_amount_entered == false || payment_method_checked == false || benefactor_title_entered == false){
 		alert("u dun goofed");
 		return false;
+	}else{
+		window.location = 'thankyou.html?formtype=benefactor';
+		return false;
 	}
 }
