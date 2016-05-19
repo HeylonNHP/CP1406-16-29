@@ -4,6 +4,9 @@ var text_area_max_length = text_area.getAttribute('maxlength');
 
 var chars_left_label = document.getElementById('charactersAvailable');
 
+var textbox_error_colour = '#ff4d4d';
+var textbox_normal_colour = '#FFFFFF';
+
 function on_type(){
 	var chars_left = text_area_max_length - text_area.value.length;
 	chars_left_label.innerHTML = "Characters left: " + chars_left;
@@ -54,7 +57,7 @@ function check_form(){
 		email_error = true;
 	}
 	
-	if(form_values_dict['phonenumber'] == ""){
+	if(form_values_dict['phonenumber'].length < 10){
 		phonenumber_error = true;
 	}
 	
@@ -70,5 +73,22 @@ function check_form(){
 		return false;
 	}
 	
+}
+
+//Live error checking
+function input_text_ontype(textbox){
+	if(textbox.value == ""){
+		textbox.style.backgroundColor = textbox_error_colour;
+	}else{
+		textbox.style.backgroundColor = textbox_normal_colour;
+	}
+}
+
+function input_phonenumber_ontype(textbox){
+	if(textbox.value.length < 10){
+		textbox.style.backgroundColor = textbox_error_colour;
+	}else{
+		textbox.style.backgroundColor = textbox_normal_colour;
+	}
 }
 on_type();

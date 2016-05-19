@@ -58,23 +58,23 @@ Benefactor and contribute $</label>
 </fieldset>
 <br>
 <label for="benefactortitle" class="leftlabel">Please place me/us on the benefactor roll as</label>
-<input type="text" name="benefactortitle" id="benefactortitle"><label for="remainanonymous"> OR remain anonymous</label>
+<input type="text" name="benefactortitle" id="benefactortitle" onKeyUp="standard_textbox_ontype(this);"><label for="remainanonymous"> OR remain anonymous</label>
 <input type="checkbox" name="remainanonymous" id="remainanonymous">
 <br>
 <label for="name" class="leftlabel">Name</label>
-<input type="text" name="name" id="name">
+<input type="text" name="name" id="name" onKeyUp="standard_textbox_ontype(this);">
 <br>
 <label for="mailingaddress" class="leftlabel">Mailing address</label>
-<input type="text" name="mailingaddress" id="mailingaddress">
+<input type="text" name="mailingaddress" id="mailingaddress" onKeyUp="standard_textbox_ontype(this);">
 <br>
 <label for="emailaddress" class="leftlabel">Email address</label>
 <input type="text" name="emailaddress" id="emailaddress">
 <br>
 <label for="phonenumber" class="leftlabel">Phone</label>
-<input type="text" name="phonenumber" id="phonenumber">
+<input type="text" name="phonenumber" id="phonenumber" onKeyUp="phonenumber_textbox_ontype();">
 <br>
 <label for="mobilenumber" class="leftlabel">Mobile</label>
-<input type="text" name="mobilenumber" id="mobilenumber">
+<input type="text" name="mobilenumber" id="mobilenumber" onKeyUp="phonenumber_textbox_ontype();">
 <br>
 <label class="leftlabel">Signature</label>
 <div id="sketch" style="width:200px; height:150px; cursor:crosshair; display:inline-block; border-style:solid;">

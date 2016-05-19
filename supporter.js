@@ -1,31 +1,124 @@
 // JavaScript Document
+
+var textbox_error_colour = '#ff4d4d';
+var textbox_normal_colour = '#FFFFFF';
+
 function check_form(){
 	var form = document.getElementById('benefactorForm');
-	var errors = false;
+	var form_inputs = form.getElementsByTagName('input');
 	
-	var correct_amount_entered = true;
-	var amount = form.amount.value;
-	if(amount <= 0 || amount == ""){
-		correct_amount_entered = false;
+	var form_values_dict = {};
+	
+	for(var i = 0; i < form_inputs.length; i++){
+		try{
+			form_values_dict[form_inputs.item(i).getAttribute('name')] = form_inputs.item(i).value;
+		}catch(err){
+			alert("failed");
+		}
 	}
 	
-	var payment_method_checked = false;
-	for(var i = 0; i < document.benefactorForm.payment.length; i++){
-		payment_method_checked = true;
+	//Get payment method
+	if(form.bycheque.checked){
+		form_values_dict['payment'] = 'cheque';
+	}else if(form.byeftpos.checked){
+		form_values_dict['payment'] = 'eftpos';
+	}else if(form.bycash.checked){
+		form_values_dict['payment'] = 'cash';
+	}else{
+		form_values_dict['payment'] = 'not selected';
 	}
 	
-	var benefactor_title_entered = true;
-	var benefactor_title = form.benefactortitle.value;
-	var remain_anonymous = form.remainanonymous.checked;
-	if(benefactor_title == "" && remain_anonymous == false){
-		benefactor_title_entered = false;
+	var amount_error = false;
+	var payment_type_error = false;
+	var benefactor_title_error = false;
+	var name_error = false;
+	var mailing_address_error = false;
+	var phone_error = false;
+	
+	if(check_amount_correct(form_values_dict['amount']) == false){
+		amount_error = true;
+	}
+		
+	if(check_payment_type_correct(form_values_dict['payment']) == false){
+		payment_type_error = true;
+	}
+		
+	if(check_string_non_empty(form_values_dict['benefactortitle']) == false && form.remainanonymous.checked == false){
+		benefactor_title_error = true;
 	}
 	
-	if(correct_amount_entered == false || payment_method_checked == false || benefactor_title_entered == false){
+	if(check_string_non_empty(form_values_dict['name']) == false){
+		name_error = true;
+	}
+	
+	if(check_string_non_empty(form_values_dict['mailingaddress']) == false){
+		mailing_address_error = true;
+	}
+	
+	if(check_phonenumber_correct(form_values_dict['phonenumber']) == false && check_phonenumber_correct(form_values_dict['mobilenumber']) == false){
+		phone_error = true;		
+	}
+	
+	if(amount_error || payment_type_error || benefactor_title_error || name_error || phone_error){
 		alert("u dun goofed");
 		return false;
 	}else{
 		window.location = 'thankyou.html?formtype=benefactor';
 		return false;
 	}
+}
+
+//Error checking
+function check_amount_correct(amount){
+	if(amount.length <= 0){
+		return false;
+	}
+	if(amount <= 0){
+		return false;	
+	}
+	return true;
+}
+
+function check_payment_type_correct(payment_type){
+	if(payment_type == "not selected"){
+		return false;	
+	}
+	return true;
+}
+
+function check_string_non_empty(string){
+	if(string == ""){
+		return false;	
+	}
+	return true;
+}
+
+function check_phonenumber_correct(phonenumber){
+	if(phonenumber.length < 10){
+		return false;	
+	}
+	return true;
+}
+
+//Live error checking
+function standard_textbox_ontype(textbox){
+	if(check_string_non_empty(textbox.value)){
+		textbox.style.backgroundColor = textbox_normal_colour;
+	}else{
+		textbox.style.backgroundColor = textbox_error_colour;
+	}
+}
+
+function phonenumber_textbox_ontype(){
+	var mobile_textbox = document.getElementById('phonenumber');
+	var landline_phone_textbox = document.getElementById('mobilenumber');
+	
+	if(check_phonenumber_correct(landline_phone_textbox.value) || check_phonenumber_correct(mobile_textbox.value)){
+		landline_phone_textbox.style.backgroundColor = textbox_normal_colour;
+		mobile_textbox.style.backgroundColor = textbox_normal_colour;
+	}else{
+		landline_phone_textbox.style.backgroundColor = textbox_error_colour;
+		mobile_textbox.style.backgroundColor = textbox_error_colour;
+	}
+	
 }

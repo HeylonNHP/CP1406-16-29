@@ -37,13 +37,13 @@
 <section id="pageContent">
 <h1>Contact us</h1>
 <form action="" method="post" name="contactForm" id="contactForm" class="globalboxshadow" onsubmit="return check_form();">
-<label for="firstname" class="leftlabel">First name</label><input type="text" name="firstname" id="firstname" onKeyUp="test1(this);">
+<label for="firstname" class="leftlabel">First name</label><input type="text" name="firstname" id="firstname" onKeyUp="input_text_ontype(this);">
 <br>
-<label for="lastname" class="leftlabel">Last name</label><input type="text" name="lastname" id="lastname">
+<label for="lastname" class="leftlabel">Last name</label><input type="text" name="lastname" id="lastname" onKeyUp="input_text_ontype(this);">
 <br>
-<label for="email" class="leftlabel">Email address</label><input type="text" name="email" id="email">
+<label for="email" class="leftlabel">Email address</label><input type="text" name="email" id="email" onKeyUp="input_text_ontype(this);">
 <br>
-<label for="phonenumber" class="leftlabel">Phone number</label><input type="text" name="phonenumber" id="phonenumber">
+<label for="phonenumber" class="leftlabel">Phone number</label><input type="text" name="phonenumber" id="phonenumber" onKeyUp="input_phonenumber_ontype(this);">
 <br>
 <label for="comments" class="leftlabel">Comments</label><textarea name="comments" id="comments" spellcheck="true" rows="10" cols="30" maxlength="1500" onKeyUp="on_type();" onChange="change();"></textarea>
 <label id="charactersAvailable">chars: test</label>
