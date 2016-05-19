@@ -5,7 +5,9 @@
 <title>Home</title>
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <link href="page_styles.css" rel="stylesheet" type="text/css">
+<link href="supporter.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="page_script.js"></script>
+<script src="supporter.js" type="text/javascript"></script>
 </head>
 
 <body onResize="pageResize()" onLoad="pageResize()">
@@ -36,12 +38,15 @@
 <section id="pageContent">
 <h1>Forms</h1>
 <h2>Become a benefactor</h2>
-<form action="" method="post" name="benefactorForm" id="benefactorForm" onsubmit="return checkForm();">
+<form action="" method="post" name="benefactorForm" id="benefactorForm" class="globalboxshadow" onsubmit="return check_form();">
 
-<label for="amount">I wish to become a Barrier Reef Orchestra Benefactor and contribute $</label>
+<label for="amount" class="leftlabel">I wish to become a Barrier Reef Orchestra<br>
+Benefactor and contribute $</label>
 <input type="text" name="amount" id="amount">
 <br><br>
-<fieldset>
+<label class="leftlabel">Payment method</label>
+<fieldset id="groupbox">
+<legend id="groupboxLegend">Choose:</legend>
 <input type="radio" name="payment" id="bycheque" value="cheque">
 <label for="bycheque">By cheque</label>
 <br>
@@ -52,26 +57,26 @@
 <label for="bycash">By cash</label>
 </fieldset>
 <br>
-<label for="benefactortitle">Please place me/us on the benefactor roll as</label>
+<label for="benefactortitle" class="leftlabel">Please place me/us on the benefactor roll as</label>
 <input type="text" name="benefactortitle" id="benefactortitle"><label for="remainanonymous"> OR remain anonymous</label>
 <input type="checkbox" name="remainanonymous" id="remainanonymous">
 <br>
-<label for="name">Name</label>
+<label for="name" class="leftlabel">Name</label>
 <input type="text" name="name" id="name">
 <br>
-<label for="mailingaddress">Mailing address</label>
+<label for="mailingaddress" class="leftlabel">Mailing address</label>
 <input type="text" name="mailingaddress" id="mailingaddress">
 <br>
-<label for="emailaddress">Email address</label>
+<label for="emailaddress" class="leftlabel">Email address</label>
 <input type="text" name="emailaddress" id="emailaddress">
 <br>
-<label for="phonenumber">Phone</label>
+<label for="phonenumber" class="leftlabel">Phone</label>
 <input type="text" name="phonenumber" id="phonenumber">
 <br>
-<label for="mobilenumber">Mobile</label>
+<label for="mobilenumber" class="leftlabel">Mobile</label>
 <input type="text" name="mobilenumber" id="mobilenumber">
 <br>
-<label>Signature</label>
+<label class="leftlabel">Signature</label>
 <div id="sketch" style="width:200px; height:150px; cursor:crosshair; display:inline-block; border-style:solid;">
   <canvas id="paint"></canvas>
 </div>

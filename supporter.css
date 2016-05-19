@@ -1,0 +1,42 @@
+@charset "utf-8";
+#pageContent #benefactorForm .leftlabel {
+	float: left;
+    clear: both;
+    min-width: 335px;
+    text-align: right;
+}
+#benefactorForm {
+	border-style:solid;
+	border-width:1px;
+	border-radius:4px;
+	padding-top:7px;
+	background-color:#F0F0F0;
+}
+#pageContent #benefactorForm input {
+	margin-bottom:7px;
+	margin-left:10px;
+	border-radius:4px;
+}
+#pageContent #benefactorForm #groupbox {
+	margin-left:10px;
+	margin-bottom:7px;
+	border-radius:4px;
+	display:inline-block;
+}
+#pageContent #benefactorForm #submitbutton {
+	position:relative;
+	left:50%;
+	transform:translateX(-50%);
+	margin-top:15px;
+	background-color:#00BBFF;
+}
+
+/*Case: Width too small to display form normally
+Effect: adjust form to fit small screens*/
+@media only screen and (max-width: 650px)
+{
+	#pageContent #benefactorForm .leftlabel {
+		width:auto;
+		float:inherit;
+	}
+}
