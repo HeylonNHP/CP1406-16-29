@@ -110,8 +110,8 @@ function standard_textbox_ontype(textbox){
 }
 
 function phonenumber_textbox_ontype(){
-	var mobile_textbox = document.getElementById('phonenumber');
-	var landline_phone_textbox = document.getElementById('mobilenumber');
+	var mobile_textbox = document.getElementById('mobilenumber');
+	var landline_phone_textbox = document.getElementById('phonenumber');
 	
 	if(check_phonenumber_correct(landline_phone_textbox.value) || check_phonenumber_correct(mobile_textbox.value)){
 		landline_phone_textbox.style.backgroundColor = textbox_normal_colour;
@@ -121,4 +121,12 @@ function phonenumber_textbox_ontype(){
 		mobile_textbox.style.backgroundColor = textbox_error_colour;
 	}
 	
+}
+
+function price_textbox_ontype(textbox){
+	if(check_amount_correct(textbox.value)){
+		textbox.style.backgroundColor = textbox_normal_colour;
+	}else{
+		textbox.style.backgroundColor = textbox_error_colour;
+	}
 }

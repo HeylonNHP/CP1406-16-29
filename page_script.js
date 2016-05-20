@@ -36,7 +36,14 @@ function pageResize(){
 	if(current_state == 'none' && window.innerWidth > 650){
 		toggleMenu()
 	}
-
+	adjust_footer();
 }
 pageResize()
 
+function adjust_footer(){
+	var footer = document.getElementsByTagName('footer').item(0);
+	var footer_spacer = document.getElementById('footerspacing');
+	footer_spacer.style.height = footer.offsetHeight + "px";
+	//main_page.style.paddingBottom = footer.offsetHeight + "px";
+	//footer.style.bottom = "calc(0% + " +0+ "px)";
+}

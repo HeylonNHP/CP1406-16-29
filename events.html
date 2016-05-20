@@ -1,21 +1,20 @@
 ﻿<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Home</title>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events</title>
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <link href="page_styles.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="page_script.js"></script>
 </head>
 
-<body>
+<body onResize="pageResize()" onLoad="pageResize()">
 
 <!--Header & navigation menu-->
 <div id="header" class="globalboxshadow">
 
 <button id="menubutton" onClick="toggleMenu()">menu</button>
 <img src="images/logo.png" id="logoimage" height="50" onClick="window.location='index.html'"/>
-
 
 <!--Menu strip links-->
 <div id="menustrip">
@@ -30,7 +29,7 @@
 </div>
 </div>
 
-<!--Page div-->
+<!--mainpage div-->
 <div id="mainpage" class="globalboxshadow">
 <!--Main image and CTA-->
 <div id="mainimage"><img src="images/event1.png" style="width:100%;"/>
@@ -50,11 +49,8 @@
 <p>His numerous conducting activities outside of Canberra have included the foundation and development of the Barrier Reef Orchestra, with which he continues his association as Artistic Advisor and frequent conductor.</p>
 
 <p>His 35-year career at the Canberra (now ANU) School of Music played a significant part in the creation of its erstwhile international reputation. Awards have included 1986 Canberran of the Year, Advance Australia, Sounds Australian, and National Critics' Circle awards. In 1992 he was granted an Order of Australia Medal, for services to Music and Music Education, particularly for his work with the Canberra Youth Orchestra. In 2013, he was elected President of the Australian Double Reed Society. </p>
-<br>
-***************************************************************************************************************************************************************************************
-<br>
 
-
+<hr>
 
 <p>The Barrier Reef Orchestra’s final concert for 2015 is A Musical Feast.</p>
 
@@ -70,9 +66,7 @@ Currently he serves as Artistic Director and Principal Conductor of Zelman Symph
 His love of community and youth music has kept him busy contributing to the growth and development of important initiatives in both of these areas here in Australia. Most recently, Mark developed a Regional Orchestra Weekend for ensembles from across Victoria to meet and perform together, with the aim to make this an annual event.
 Mark is also passionate about the education and training of future conductors, and has been frequently involved as a guest teacher of the Masters of Conducting students at the Melbourne Conservatorium in 2015. </p>
 
-<br>
-***************************************************************************************************************************************************************************************
-<br>
+<hr>
 
 <h1>World Music Concert </h1>
 
@@ -94,9 +88,7 @@ Mark is also passionate about the education and training of future conductors, a
 </p>
 <p>Domenico Taraborrelli – one of Brisbane’s most experienced and versatile multicultural entertainers </p>
 <p>David Hudson – musician, entertainer, artist and actor  </p>
-<br>
-***************************************************************************************************************************************************************************************
-<br>
+<hr>
 
 <h1><img src="images/event4.jpg" style="float:left; padding-right:10px">Last Night at the Proms</h1>
 <p>Featuring The Company Singers</p>
@@ -107,6 +99,7 @@ at Townsville Civic Theatre</p>
 </section>
 
 <!--Page footer-->
+<span id="footerspacing">&nbsp;</span>
 <footer>
 <!--Footer CTA-->
 <span id="footerCTA"><h2 style="padding:0px; margin:0px;">Wish to become a member, benefactor or donate?</h2><br><b>Contact us</b> or <b>Become a supporter!</b></span>
@@ -132,9 +125,9 @@ at Townsville Civic Theatre</p>
 </span>
 </div>
 
-<span id="copyrighttext">Â© Copyright 2016 Heylon White &amp; Travis Macauley</span>
+<span id="copyrighttext">© Copyright 2016 Heylon White &amp; Travis Macauley</span>
 </footer>
-
+<!--End mainpage div-->
 </div>
 </body>
 </html>

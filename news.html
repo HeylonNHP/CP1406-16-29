@@ -1,22 +1,20 @@
 ﻿<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Home</title>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News</title>
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <link href="page_styles.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="page_script.js"></script>
-
 </head>
 
-<body>
+<body onResize="pageResize()" onLoad="pageResize()">
 
 <!--Header & navigation menu-->
 <div id="header" class="globalboxshadow">
 
 <button id="menubutton" onClick="toggleMenu()">menu</button>
 <img src="images/logo.png" id="logoimage" height="50" onClick="window.location='index.html'"/>
-
 
 <!--Menu strip links-->
 <div id="menustrip">
@@ -31,7 +29,7 @@
 </div>
 </div>
 
-<!--Page div-->
+<!--mainpage div-->
 <div id="mainpage" class="globalboxshadow">
 <!--Main image and CTA-->
 <div id="mainimage"><img src="images/frontpagebigimage.png" style="width:100%;"/>
@@ -65,6 +63,7 @@ for 2015 AGM North Queensland Ensembles Inc. </h1>
 </section>
 
 <!--Page footer-->
+<span id="footerspacing">&nbsp;</span>
 <footer>
 <!--Footer CTA-->
 <span id="footerCTA"><h2 style="padding:0px; margin:0px;">Wish to become a member, benefactor or donate?</h2><br><b>Contact us</b> or <b>Become a supporter!</b></span>
@@ -90,9 +89,10 @@ for 2015 AGM North Queensland Ensembles Inc. </h1>
 </span>
 </div>
 
-<span id="copyrighttext">Â© Copyright 2016 Heylon White &amp; Travis Macauley</span>
+<span id="copyrighttext">© Copyright 2016 Heylon White &amp; Travis Macauley</span>
 </footer>
-
+<!--End mainpage div-->
 </div>
 </body>
 </html>
+

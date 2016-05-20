@@ -33,16 +33,17 @@
 
 <!--mainpage div-->
 <div id="mainpage" class="globalboxshadow">
+<!--Main image-->
+<div id="mainimage"><img src="images/frontpagebigimage.png" style="width:100%;"/></div>
 
 <!--All page text/content must reside inside this section tag-->
 <section id="pageContent">
-<h1>Forms</h1>
-<h2>Become a benefactor</h2>
+<h1>Become a benefactor</h1>
 <form action="" method="post" name="benefactorForm" id="benefactorForm" class="globalboxshadow" onsubmit="return check_form();">
 
 <label for="amount" class="leftlabel">I wish to become a Barrier Reef Orchestra<br>
 Benefactor and contribute $</label>
-<input type="text" name="amount" id="amount">
+<input type="text" name="amount" id="amount" onKeyUp="price_textbox_ontype(this);">
 <br><br>
 <label class="leftlabel">Payment method</label>
 <fieldset id="groupbox">
@@ -88,6 +89,7 @@ Benefactor and contribute $</label>
 </section>
 
 <!--Page footer-->
+<span id="footerspacing">&nbsp;</span>
 <footer>
 <!--Footer CTA-->
 <span id="footerCTA"><h2 style="padding:0px; margin:0px;">Wish to become a member, benefactor or donate?</h2><br><b>Contact us</b> or <b>Become a supporter!</b></span>

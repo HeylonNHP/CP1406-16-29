@@ -1,21 +1,20 @@
 ﻿<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Home</title>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About us</title>
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <link href="page_styles.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="page_script.js"></script>
 </head>
 
-<body>
+<body onResize="pageResize()" onLoad="pageResize()">
 
 <!--Header & navigation menu-->
 <div id="header" class="globalboxshadow">
 
 <button id="menubutton" onClick="toggleMenu()">menu</button>
 <img src="images/logo.png" id="logoimage" height="50" onClick="window.location='index.html'"/>
-
 
 <!--Menu strip links-->
 <div id="menustrip">
@@ -32,10 +31,9 @@
 
 <!--Page div-->
 <div id="mainpage" class="globalboxshadow">
-<!--Main image and CTA-->
-<div id="mainimage"><img src="images/frontpagebigimage.png" style="width:100%;"/>
+<!--Main image-->
+<div id="mainimage"><img src="images/frontpagebigimage.png" style="width:100%;"/></div>
 
-</div>
 <section id="pageContent">
 <h1>The Barrier Reef Orchestra - About Us</h1>
 
@@ -43,19 +41,25 @@
 <p>North Queensland Ensembles Inc. is an Incorporated Association registered in the State of Queensland. It is also a tax deductible fund listed on the Register of Cultural Organisations under Subdivision 30-B of the Income tax Assessment Act 1997. It is based in Townsville, North Queensland, Australia. </p>
 <img alt="" height="100" src="images/about1.jpg" width="100%">
 <h1>North Queensland Ensembles Inc Management Committee 2015-2016</h1>
-
-<p>President:           --------------->   Andrew Ryder</p>
-<p>Vice-President:      --------->   Judy Hunter</p>
-<p>Secretary:           --------------->   Lorraine Gray-McConnell</p>
-<p>Treasurer:           --------------->   Annette Ellis</p>
-<p>Orchestra Manager:   ---->   Sally Frewen-Lord</p>
-<p>Committee:           ------------->   Gai Copeman</p>
-<p>-------------------------->   Suzanne Darrigan</p>
-<p>-------------------------->   Simon McConnell</p>
-<p>-------------------------->   Helen Land</p>
-<p>-------------------------->   Marg Naylor</p>
-<p>-------------------------->   Ron Piper</p>
-<p>-------------------------->   Noel Price</p>
+     <table>
+       <tbody>
+       <tr><td>&nbsp</td><td></td></tr>
+       <tr><td>President:</td><td>Andrew Ryder</td></tr>
+       <tr><td>Vice-President:</td><td>Judy Hunter</td></tr>
+       <tr><td>Secretary:</td><td>Lorraine Gray-McConnell</td></tr>
+       <tr><td>Treasurer:</td><td>Annette Ellis</td></tr>
+       <tr><td></td><td>  </td></tr>
+       <tr><td>Committee:</td><td>Gai Copeman</td></tr>
+       <tr><td></td><td>Suzanne Darrigan</td></tr>
+       <tr><td></td><td>Simon McConnell</td></tr>
+       <tr><td></td><td>Helen Land</td></tr>
+       <tr><td></td><td>Marg Naylor</td></tr>
+       <tr><td></td><td>Ron Piper</td></tr>
+       <tr><td></td><td>Noel Price</td></tr>
+       <tr><td></td><td></td></tr>
+       <tr><td>Orchestra Manager:</td><td>Sally Frewen-Lord</td></tr>
+       </tbody>       
+     </table>
 <img alt="" height="100" src="images/about2.jpg" width="100%">
 
 
@@ -63,6 +67,7 @@
 	
 <br>
 <!--Page footer-->
+<span id="footerspacing">&nbsp;</span>
 <footer>
 <!--Footer CTA-->
 <span id="footerCTA"><h2 style="padding:0px; margin:0px;">Wish to become a member, benefactor or donate?</h2><br><b>Contact us</b> or <b>Become a supporter!</b></span>
@@ -88,9 +93,9 @@
 </span>
 </div>
 
-<span id="copyrighttext">Â© Copyright 2016 Heylon White &amp; Travis Macauley</span>
+<span id="copyrighttext">© Copyright 2016 Heylon White &amp; Travis Macauley</span>
 </footer>
-
+<!--End mainpage div-->
 </div>
 </body>
 </html>
