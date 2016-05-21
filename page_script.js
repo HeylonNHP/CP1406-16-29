@@ -12,9 +12,11 @@ function toggleMenu(){
 	
 	//toggle
 	if(current_state == 'inline-block'){
-		menu_strip1.style.display = 'none';
+		//menu_strip1.style.display = 'none';
+		menu_strip1.removeAttribute('style');
 	}else{
 		menu_strip1.style.display = 'inline-block';
+		
 	}
 	
 	//Set mainpage top padding so fixed header does not overlap page content

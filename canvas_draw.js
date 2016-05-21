@@ -7,8 +7,9 @@ var ctx = canvas.getContext('2d');
 var sketch = document.querySelector('#sketch');
 var sketch_style = getComputedStyle(sketch);
 canvas.width = parseInt(sketch_style.getPropertyValue('width'));
+//canvas.width = 200;
 canvas.height = parseInt(sketch_style.getPropertyValue('height'));
-
+//canvas.height = 150 + 'px';
 var mouse = {x: 0, y: 0};
 var last_mouse = {x: 0, y: 0};
  

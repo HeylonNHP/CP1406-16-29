@@ -60,7 +60,7 @@ function check_form(){
 	}
 	
 	if(amount_error || payment_type_error || benefactor_title_error || name_error || phone_error){
-		alert("u dun goofed");
+		alert("Please make sure the required fields are filled out.");
 		return false;
 	}else{
 		window.location = 'thankyou.html?formtype=benefactor';
