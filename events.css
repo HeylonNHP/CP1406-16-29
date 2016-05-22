@@ -1,0 +1,11 @@
+@charset "utf-8";
+.event {
+	display:block;
+	width:100%;
+}
+.posterimage {
+	float:left;
+	margin-bottom:10px;
+	margin-right:10px;
+	border-radius:4px;
+}

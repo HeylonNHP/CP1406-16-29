@@ -40,7 +40,7 @@ function pageResize(){
 	}
 	adjust_footer();
 }
-pageResize()
+setInterval('pageResize();',1000);
 
 function adjust_footer(){
 	var footer = document.getElementsByTagName('footer').item(0);

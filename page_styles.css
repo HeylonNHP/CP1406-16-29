@@ -172,6 +172,7 @@ hr {
 	display:none;
 }
 
+
 /*Case: Screen width smaller than navigation menu width
 Effect: Modify navigation menu to display appropriately on mobile*/
 @media only screen and (max-width: 650px)
