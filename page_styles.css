@@ -79,7 +79,7 @@ footer {
 	position:absolute;
 	bottom:0px;
 	max-width:1000px;
-	height:250px;
+	min-height:250px;
 	padding-top:1%;
 	text-align:center;
 	color:#F0F0F0;
@@ -205,5 +205,15 @@ Effect: Modify navigation menu to display appropriately on mobile*/
 	}
 	#menubutton{
 		display:inline-block;
+	}
+	.column {
+		position:relative;
+		left:50%;
+		transform:translateX(-50%);
+		display:block;
+		width:100%;
+	}
+	#copyrighttext {
+		position:relative;
 	}
 }
