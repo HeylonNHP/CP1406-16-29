@@ -1,125 +1,41 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
-<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Become a supporter</title>
+<meta charset="utf-8">
+<title>Home</title>
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <link href="page_styles.css" rel="stylesheet" type="text/css">
-<link href="supporter.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="page_script.js"></script>
-<script src="supporter.js" type="text/javascript"></script>
 </head>
 
-<body onResize="pageResize()" onLoad="pageResize()">
+<body>
 
 <!--Header & navigation menu-->
 <div id="header" class="globalboxshadow">
+<!--<div style="display:inline">-->
+<img src="images/logo.png" height="50" style="padding-left:15px; display:inline-block; vertical-align:top; cursor:pointer;" onClick="window.location='index.html'"/>
+<!--</div>-->
 
-<button id="menubutton" onClick="toggleMenu()">menu</button>
-<img src="images/logo.png" alt="Site logo" id="logoimage" height="50" onClick="window.location='index.html'"/>
-
-<!--Menu strip links-->
-<div id="menustrip">
-<span class="menuitem" onClick="window.location='index.html'"><span class="menutext">Home</span></span>
-<span class="menuitem" onClick="window.location='news.html'"><span class="menutext">News</span></span>
-<span class="menuitem" onClick="window.location='events.html'"><span class="menutext">Events</span></span>
-<span class="menuitem" onClick="window.location='gallery.html'"><span class="menutext">Gallery</span></span>
-<span class="menuitem" onClick="window.location='people.html'"><span class="menutext">People</span></span>
-<span class="menuitem" onClick="window.location='contacts.html'"><span class="menutext">Contact us</span></span>
-<span class="menuitem" onClick="window.location='supporter.html'"><span class="menutext">Become a Supporter</span></span>
-<span class="menuitem" onClick="window.location='about us.html'"><span class="menutext">About us</span></span>
-</div>
+<div id="menustrip"><span class="menuitem"><span class="menutext"><a href="index.html">Home</a></span></span> | 
+<span class="menuitem"><span class="menutext"><a href="news.html">News</a></span></span> | 
+<span class="menuitem"><span class="menutext"><a href="events.html">Events</a></span></span> | 
+<span class="menuitem"><span class="menutext"><a href="gallery.html">Gallery</a></span></span> | 
+<span class="menuitem"><span class="menutext"><a href="people.html">People</a></span></span> | 
+<span class="menuitem"><span class="menutext"><a href="contacts.html">Contacts</a></span></span> | 
+<span class="menuitem"><span class="menutext"><a href="supporter.html">Become a Supporter</a></span></span> | 
+<span class="menuitem"><span class="menutext"><a href="about%20us.html">About Us</a></span></span></div>
 </div>
 
-<!--mainpage div-->
+<!--Page div-->
 <div id="mainpage" class="globalboxshadow">
-<!--Main image-->
-<div id="mainimage"><img src="images/frontpagebigimage.png" style="width:100%;"/></div>
+<!--Main image and CTA-->
+<div id="mainimage"><img src="images/frontpagebigimage.png" style="width:100%;"/>
 
-<!--All page text/content must reside inside this section tag-->
+</div>
 <section id="pageContent">
-  <h1>Become a benefactor</h1>
-  <p>With a philanthropic gift of $200 or more (we leave that up to you) you can become an Orchestra Benefactor and be placed on our Benefactor roll for 12 months. This roll will be published in each concert program and on our website for 12 months. As a benefactor you will also receive two complimentary tickets to our next concert, be placed on the mailing list for our newsletter and will be a guest at our annual Season’s Launch function. Please complete the details below and mail to PO Box 576 Townsville 4810, make cheques payable to <b>North Queensland Ensembles Inc.</b> or you can scan and email this to <b><a href="mailto:brotownsville@gmail.com">brotownsville@gmail.com</a></b> and pay by direct debit to <b>BSB 034222 Account no. 173922</b> Donations are tax deductable. For more information, contact Simon McConnell 0418776961, <a href="mailto:mcconnellgray@optusnet.com.au">mcconnellgray@optusnet.com.au</a>. Your support of the Orchestra will be greatly appreciated. </p>
-  
-  <form action="" method="post" name="benefactorForm" id="benefactorForm" class="globalboxshadow" onsubmit="return check_form();">
-
-<label for="amount" class="leftlabel">I wish to become a Barrier Reef Orchestra<br>
-Benefactor and contribute $</label>
-<input type="text" name="amount" id="amount" onKeyUp="price_textbox_ontype(this);">
-<br><br>
-<label class="leftlabel">Payment method</label>
-<fieldset id="groupbox">
-<legend id="groupboxLegend">Choose:</legend>
-<input type="radio" name="payment" id="bycheque" value="cheque">
-<label for="bycheque">By cheque</label>
-<br>
-<input type="radio" name="payment" id="byeftpos" value="eftpos">
-<label for="byeftpos">By eftpos</label>
-<br>
-<input type="radio" name="payment" id="bycash" value="cash">
-<label for="bycash">By cash</label>
-</fieldset>
-<br>
-<label for="benefactortitle" class="leftlabel">Please place me/us on the benefactor roll as</label>
-<input type="text" name="benefactortitle" id="benefactortitle" onKeyUp="standard_textbox_ontype(this);"><label for="remainanonymous"> OR remain anonymous</label>
-<input type="checkbox" name="remainanonymous" id="remainanonymous">
-<br>
-<label for="name" class="leftlabel">Name</label>
-<input type="text" name="name" id="name" onKeyUp="standard_textbox_ontype(this);">
-<br>
-<label for="mailingaddress" class="leftlabel">Mailing address</label>
-<input type="text" name="mailingaddress" id="mailingaddress" onKeyUp="standard_textbox_ontype(this);">
-<br>
-<label for="emailaddress" class="leftlabel">Email address</label>
-<input type="text" name="emailaddress" id="emailaddress">
-<br>
-<label for="phonenumber" class="leftlabel">Phone</label>
-<input type="text" name="phonenumber" id="phonenumber" onKeyUp="phonenumber_textbox_ontype();">
-<br>
-<label for="mobilenumber" class="leftlabel">Mobile</label>
-<input type="text" name="mobilenumber" id="mobilenumber" onKeyUp="phonenumber_textbox_ontype();">
-<br>
-<label class="leftlabel">Signature</label>
-<div id="sketch" style="width:200px; height:150px; cursor:crosshair; display:inline-block; border-style:solid;">
-  <canvas id="paint"></canvas>
-</div>
-<button onClick="clearCanvas()" type="button">Clear</button>
-<script type="text/javascript" src="canvas_draw.js"></script>
-<br>
-<input type="submit" name="submitbutton" id="submitbutton">
-</form>
+<h1>The Barrier Reef Orchestra - Become a Supporter</h1>
 </section>
-
-<!--Page footer-->
-<span id="footerspacing">&nbsp;</span>
-<footer>
-<!--Footer CTA-->
-<span id="footerCTA"><h2 style="padding:0px; margin:0px;">Wish to become a member, benefactor or donate?</h2><br><b>Contact us</b> or <b>Become a supporter!</b></span>
-<!--Page links-->
-<div id="footerlinks">
-<span class="column">
-<h4 style="margin:0px;">Pages</h4>
-<span class="footerlinkitem" onClick="window.location='index.html'">Home</span>
-<span class="footerlinkitem" onClick="window.location='news.html'">News</span>
-<span class="footerlinkitem" onClick="window.location='events.html'">Events</span>
-</span>
-<span class="column">
-<h4 style="margin:0px;">Pages</h4>
-<span class="footerlinkitem" onClick="window.location='gallery.html'">Gallery</span>
-<span class="footerlinkitem" onClick="window.location='people.html'">People</span>
-<span class="footerlinkitem" onClick="window.location='about us.html'">About us</span>
-</span>
-<span class="column">
-<h4 style="margin:0px;">Connect with us</h4>
-<span class="footerlinkitem" onClick="window.location='https://www.facebook.com/nqorchestra/'">Facebook</span>
-<span class="footerlinkitem" onClick="window.location='contacts.html'">Contact us</span>
-<span class="footerlinkitem" onClick="window.location='supporter.html'">Become a supporter</span>
-</span>
-</div>
-
-<span id="copyrighttext">© Copyright 2016 Heylon White &amp; Travis Macauley</span>
-</footer>
-<!--End mainpage div-->
+<br>
+<br>
 </div>
 </body>
 </html>
