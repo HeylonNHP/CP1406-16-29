@@ -53,7 +53,7 @@ function adjust_footer(){
 //Collapsible sections code
 
 /*To use this code add initalise_collapsible_sections() function call to the bottom of desired webpage
-Also do not use inline-styles on collapsible elements - Heylon
+Also do not use inline-styles on collapsible elements, as they will be erased on section expansion - Heylon
 */
 function initalise_collapsible_sections(){
 	var collapsible_sections = document.getElementsByClassName('collapsible');
