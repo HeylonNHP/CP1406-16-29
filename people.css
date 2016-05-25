@@ -1,0 +1,6 @@
+@charset "utf-8";
+.person {
+	display:block;
+	float:left;
+	width:100%;
+}

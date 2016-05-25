@@ -1,42 +1,44 @@
 ﻿<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Home</title>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events</title>
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <link href="page_styles.css" rel="stylesheet" type="text/css">
+<link href="events.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="page_script.js"></script>
 </head>
 
-<body>
+<body onResize="pageResize()" onLoad="pageResize()">
 
 <!--Header & navigation menu-->
 <div id="header" class="globalboxshadow">
-<!--<div style="display:inline">-->
-<img src="images/logo.png" height="50" style="padding-left:15px; display:inline-block; vertical-align:top; cursor:pointer;" onClick="window.location='index.html'"/>
-<!--</div>-->
 
-<<div id="menustrip"><span class="menuitem"><span class="menutext"><a href="index.html">Home</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="news.html">News</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="events.html">Events</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="gallery.html">Gallery</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="people.html">People</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="contacts.html">Contacts</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="supporter.html">Become a Supporter</a></span></span> | 
-<span class="menuitem"><span class="menutext"><a href="about%20us.html">About Us</a></span></span></div>
+<button id="menubutton" onClick="toggleMenu()">menu</button>
+<img src="images/logo.png" alt="Site logo" id="logoimage" height="50" onClick="window.location='index.html'"/>
+
+<!--Menu strip links-->
+<div id="menustrip">
+<span class="menuitem" onClick="window.location='index.html'"><span class="menutext">Home</span></span>
+<span class="menuitem" onClick="window.location='news.html'"><span class="menutext">News</span></span>
+<span class="menuitem" onClick="window.location='events.html'"><span class="menutext">Events</span></span>
+<span class="menuitem" onClick="window.location='gallery.html'"><span class="menutext">Gallery</span></span>
+<span class="menuitem" onClick="window.location='people.html'"><span class="menutext">People</span></span>
+<span class="menuitem" onClick="window.location='contacts.html'"><span class="menutext">Contact us</span></span>
+<span class="menuitem" onClick="window.location='supporter.html'"><span class="menutext">Become a Supporter</span></span>
+<span class="menuitem" onClick="window.location='about us.html'"><span class="menutext">About us</span></span>
+</div>
 </div>
 
-<!--Page div-->
+<!--mainpage div-->
 <div id="mainpage" class="globalboxshadow">
-<!--Main image and CTA-->
-<div id="mainimage"><img src="images/event1.png" style="width:100%;"/>
 
-</div>
 <section id="pageContent">
-<h1>Conducted by - 
-<br> Richard McIntyre OAM, BMus (University of Sydney) </h1>
-
+<h1>Past Events</h1>
+<div class="event">
+<h1>Dreams and Dances</h1><hr>
 <p> 
-<img alt="Photo by Chrissy Maguire" height="250" src="images/richard-mcintyre.jpg" style="float:right">Richard has maintained a long and distinguished career as bassoonist, music educator, conductor and arranger. A Composition graduate from Sydney University, he was appointed Associate Principal Bassoon with the Sydney Symphony Orchestra as a 20-year-old in 1968, moving to The Canberra School of Music as a foundation member of the Canberra Wind Soloists in 1978. With this renowned quintet, he recorded and toured internationally during a 30-year period, and gave it a unique repertoire with his virtuoso arrangements of large-scale orchestral works. He was for many years Principal Bassoon with the Australian Chamber Orchestra, and appeared on many occasions as guest Principal Bassoon with most of the Symphony Australia Orchestras - also as concerto soloist, and independently as a recitalist. His continuing work as Principal Bassoon with the Canberra Symphony Orchestra dates back to student days of 1965 - 67. If you'd like to hear some of his work as bassoonist, chamber musician, and arranger, you'll find it on YouTube under Canberra Wind Soloists.</p>
+<img class="posterimage" src="images/dreams_&_dances.jpg" alt="Dreams & dances poster" style="max-width:350px;"/>Richard has maintained a long and distinguished career as bassoonist, music educator, conductor and arranger. A Composition graduate from Sydney University, he was appointed Associate Principal Bassoon with the Sydney Symphony Orchestra as a 20-year-old in 1968, moving to The Canberra School of Music as a foundation member of the Canberra Wind Soloists in 1978. With this renowned quintet, he recorded and toured internationally during a 30-year period, and gave it a unique repertoire with his virtuoso arrangements of large-scale orchestral works. He was for many years Principal Bassoon with the Australian Chamber Orchestra, and appeared on many occasions as guest Principal Bassoon with most of the Symphony Australia Orchestras - also as concerto soloist, and independently as a recitalist. His continuing work as Principal Bassoon with the Canberra Symphony Orchestra dates back to student days of 1965 - 67. If you'd like to hear some of his work as bassoonist, chamber musician, and arranger, you'll find it on YouTube under Canberra Wind Soloists.</p>
 
 <p>Simultaneously, he has sustained a career as one of Australia's most respected bassoon teachers, at all levels from beginner to post-graduate and professional. In addition he has worked tirelessly in the development of orchestral and ensemble skills with students of all instruments, particularly at the advanced tertiary level. He was for many years a regular tutor and conductor at the Australian Youth Orchestra's National Music Camps. He has taught over many years in south-east Asia.</p>
 
@@ -45,26 +47,75 @@
 <p>His numerous conducting activities outside of Canberra have included the foundation and development of the Barrier Reef Orchestra, with which he continues his association as Artistic Advisor and frequent conductor.</p>
 
 <p>His 35-year career at the Canberra (now ANU) School of Music played a significant part in the creation of its erstwhile international reputation. Awards have included 1986 Canberran of the Year, Advance Australia, Sounds Australian, and National Critics' Circle awards. In 1992 he was granted an Order of Australia Medal, for services to Music and Music Education, particularly for his work with the Canberra Youth Orchestra. In 2013, he was elected President of the Australian Double Reed Society. </p>
-<br>
-<br>
+</div>
 
+<div class="event">
+<h1>A Musical Feast</h1><hr>
+<img class="posterimage" src="images/a_musical_feast.png" alt="A musical feast" style="max-width:350px;"/>
 <p>The Barrier Reef Orchestra’s final concert for 2015 is A Musical Feast.</p>
 
-<p>The conductor is Mark Shiell making a return visit to Townsville.</p>
+<p>The conductor is <a href="people.html#markshiell">Mark Shiell</a> making a return visit to Townsville.</p>
 
 <p>The concert will include music from many different composers including Bach, Brahms and Strauss and will feature soprano, Julie O’Connor who will sing numbers from Puccini and Dvorak. </p>
+</div>
 
-<img src="images/event2.png" style="width:48%; float:left; padding-right:4%"/> <img src="images/Mark Shiell.jpg" style="width:48%;"/>
+<div class="event">
+<h1>World Music Concert </h1><hr>
 
-<br>
+<img class="posterimage" src="images/world_music_concert.jpg" alt="World music concert" style="max-width:261px;"/>
 
-<p>Mark has guest-conducted ensembles including the Melbourne Symphony Orchestra, West Australian Symphony, Moscow Symphony Orchestra, State Academic Symphony Orchestra of St. Petersburg, Victorian Opera, Orchestra Ensemble Kanazawa, Canberra Symphony Orchestra, Sydney Sinfonia, Melbourne Youth Orchestra, University of Melbourne Symphony Orchestra and the Orchestras of the State Music Camps in Melbourne and Adelaide.
-Currently he serves as Artistic Director and Principal Conductor of Zelman Symphony Orchestra, the Ballarat Symphony and the Macquarie Philharmonia.
-His love of community and youth music has kept him busy contributing to the growth and development of important initiatives in both of these areas here in Australia. Most recently, Mark developed a Regional Orchestra Weekend for ensembles from across Victoria to meet and perform together, with the aim to make this an annual event.
-Mark is also passionate about the education and training of future conductors, and has been frequently involved as a guest teacher of the Masters of Conducting students at the Melbourne Conservatorium in 2015. </p>
+<p>As you travel the globe one of the standout features of so many different countries is undoubtedly their music. This concert saves on the shoe leather and brings an eclectic mix of music from all over the world to Townsville.</p>
+<p>A unique performance conceptualised and developed here in Townsville by the Barrier Reef Orchestra highlighting the stunning diversity of cultural music from around the globe. Featuring the Orchestra and several international artists performing music from Asia, the Americas, the British Isles, Europe and of course Australia.</p>
+<p>So pack away the passport take the trip of a life time and never leave home. Join Townsville’s very own Barrier Reef Orchestra in their 15th year for a World Music Concert. </p>
+
+<h3>Special Guests</h3>
+<ul>
+<li><a href="people.html#adamlopez">Adam Lopez</a> – Developed his multi-octave voice while studying opera in Australia</li>
+<li><a href="people.html#domenicotaraborrelli">Domenico Taraborrelli</a> – one of Brisbane’s most experienced and versatile multicultural entertainers</li>
+<li><a href="people.html#davidhudson">David Hudson</a> – musician, entertainer, artist and actor</li>
+</ul>
+
+</div>
+
+<h1>Last Night at the Proms</h1><hr>
+<img class="posterimage" src="images/event4.jpg" style="max-width:300px;">
+<p>Featuring The Company Singers</p>
+<p>Arranged and Conducted by Richard McIntyre</p>
+<p>Saturday, 1st November 2014
+at Townsville Civic Theatre</p>
+<br><br><br>
 </section>
-<br>
-<br>
+
+<!--Page footer-->
+<span id="footerspacing">&nbsp;</span>
+<footer>
+<!--Footer CTA-->
+<span id="footerCTA"><h2 style="padding:0px; margin:0px;">Wish to become a member, benefactor or donate?</h2><br><b>Contact us</b> or <b>Become a supporter!</b></span>
+<!--Page links-->
+<div id="footerlinks">
+<span class="column">
+<h4 style="margin:0px;">Pages</h4>
+<span class="footerlinkitem" onClick="window.location='index.html'">Home</span>
+<span class="footerlinkitem" onClick="window.location='news.html'">News</span>
+<span class="footerlinkitem" onClick="window.location='events.html'">Events</span>
+</span>
+<span class="column">
+<h4 style="margin:0px;">Pages</h4>
+<span class="footerlinkitem" onClick="window.location='gallery.html'">Gallery</span>
+<span class="footerlinkitem" onClick="window.location='people.html'">People</span>
+<span class="footerlinkitem" onClick="window.location='about us.html'">About us</span>
+</span>
+<span class="column">
+<h4 style="margin:0px;">Connect with us</h4>
+<span class="footerlinkitem" onClick="window.location='https://www.facebook.com/nqorchestra/'">Facebook</span>
+<span class="footerlinkitem" onClick="window.location='contacts.html'">Contact us</span>
+<span class="footerlinkitem" onClick="window.location='supporter.html'">Become a supporter</span>
+</span>
+</div>
+
+<span id="copyrighttext">© Copyright 2016 Heylon White &amp; Travis Macauley</span>
+</footer>
+<!--End mainpage div-->
 </div>
 </body>
 </html>

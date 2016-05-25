@@ -1,11 +1,25 @@
 @charset "utf-8";
 .event {
 	display:block;
+	float:left;
 	width:100%;
 }
 .posterimage {
 	float:left;
+	display:inline-block;
 	margin-bottom:10px;
 	margin-right:10px;
 	border-radius:4px;
+}
+/*Case: Screen width too small for floating images
+Effect: Fix images to center*/
+@media only screen and (max-width: 500px)
+{
+	.posterimage {
+		float:none;
+		position:relative;
+		left:50%;
+		transform:translateX(-50%);
+		width:100%;
+	}
 }
