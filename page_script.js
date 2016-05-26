@@ -85,7 +85,7 @@ function initalise_collapsible_sections(){
 function toggle_collapsible_section(){
 	var collapsible_sections = document.getElementsByClassName('collapsible');
 	var this_button_id = this.getAttribute('data-collapsible_id');
-	var my_collapsible_section_id = this.getAttribute('data-collapsible_section_index');
+	var my_collapsible_section_id = parseInt(this.getAttribute('data-collapsible_section_index'));
 	
 	var button_states = ['show more', 'show less'];
 	
